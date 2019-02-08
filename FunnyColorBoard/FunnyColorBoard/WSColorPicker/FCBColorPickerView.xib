@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FCBColorPickerView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkP-oj-Tpd">
+                    <rect key="frame" x="28" y="288.5" width="319" height="318.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wkP-oj-Tpd" secondAttribute="height" multiplier="1:1" id="w2J-x7-rkf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5EZ-a7-LQz">
+                    <rect key="frame" x="53" y="188.5" width="60" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="TPa-Kc-OVf"/>
+                        <constraint firstAttribute="width" constant="60" id="UhA-AW-jIX"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYR-af-YJf">
+                    <rect key="frame" x="247" y="199.5" width="70" height="39"/>
+                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="23"/>
+                    <state key="normal" title="Pick!">
+                        <color key="titleColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapPickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="iQQ-Bc-aPQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.60030500856164382" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wkP-oj-Tpd" secondAttribute="bottom" constant="60" id="BY1-Qi-8QF"/>
+                <constraint firstItem="MYR-af-YJf" firstAttribute="centerY" secondItem="5EZ-a7-LQz" secondAttribute="centerY" id="SN3-6X-ADC"/>
+                <constraint firstItem="wkP-oj-Tpd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="T7J-C0-FlF"/>
+                <constraint firstItem="MYR-af-YJf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5EZ-a7-LQz" secondAttribute="trailing" id="TXk-q1-MtH"/>
+                <constraint firstItem="MYR-af-YJf" firstAttribute="trailing" secondItem="wkP-oj-Tpd" secondAttribute="trailing" constant="-30" id="WdN-4B-MWA"/>
+                <constraint firstItem="wkP-oj-Tpd" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.85" id="aK5-Y1-rt9"/>
+                <constraint firstItem="5EZ-a7-LQz" firstAttribute="leading" secondItem="wkP-oj-Tpd" secondAttribute="leading" constant="25" id="fKN-PG-YPJ"/>
+                <constraint firstItem="wkP-oj-Tpd" firstAttribute="top" secondItem="5EZ-a7-LQz" secondAttribute="bottom" constant="40" id="sO8-mg-cN8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="colorPad" destination="wkP-oj-Tpd" id="xbn-Xj-MiF"/>
+                <outlet property="showingSquare" destination="5EZ-a7-LQz" id="Gq4-Bs-xCc"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

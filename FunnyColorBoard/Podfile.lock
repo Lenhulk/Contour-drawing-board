@@ -1,0 +1,37 @@
+PODS:
+  - IFMMenu (1.0.3)
+  - Masonry (1.0.2)
+  - ProgressHUD (2.51)
+  - UMCAnalytics (5.5.0):
+    - UMCCommon
+  - UMCCommon (1.5.0)
+  - UMCSecurityPlugins (1.0.6)
+
+DEPENDENCIES:
+  - IFMMenu
+  - Masonry (~> 1.0.1)
+  - ProgressHUD
+  - UMCAnalytics
+  - UMCCommon
+  - UMCSecurityPlugins
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - IFMMenu
+    - Masonry
+    - ProgressHUD
+    - UMCAnalytics
+    - UMCCommon
+    - UMCSecurityPlugins
+
+SPEC CHECKSUMS:
+  IFMMenu: f3f6b5d9e16a40140cc3361401a1143c4a35d5c4
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  ProgressHUD: 54b4c2fa202bf3da7dddc1c698ae4e6376333bd9
+  UMCAnalytics: 4667788559a72f2fa5077117d1b8802a3b6eb6bb
+  UMCCommon: 82d21f4bb9532a5472cc533bbd8ed48aff376a14
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+
+PODFILE CHECKSUM: 6f8be317502948f625b871f4ab535f056405ae42
+
+COCOAPODS: 1.5.0

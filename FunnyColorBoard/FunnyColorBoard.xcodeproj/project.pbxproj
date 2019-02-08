@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2016B51020CBBACB00BDA528 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2016B51220CBBACB00BDA528 /* InfoPlist.strings */; };
+		2016B51720CBBF3A00BDA528 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2016B51920CBBF3A00BDA528 /* Localizable.strings */; };
+		2016B52220CD33C200BDA528 /* shutter.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2016B52020CD33C200BDA528 /* shutter.wav */; };
+		2016B52320CD33C200BDA528 /* polaroid.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2016B52120CD33C200BDA528 /* polaroid.wav */; };
+		201E600320C815920064D77B /* LTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 201E600220C815920064D77B /* LTNavigationController.m */; };
+		20AFE24320C3D170006BD0CF /* paletteColor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AFE24220C3D170006BD0CF /* paletteColor@2x.png */; };
+		20AFE24520C3D598006BD0CF /* followCircle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AFE24420C3D598006BD0CF /* followCircle@3x.png */; };
+		20AFE24A20C41512006BD0CF /* PanBoldSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AFE24920C41512006BD0CF /* PanBoldSlider.m */; };
+		20AFE24E20C41606006BD0CF /* PanBoldSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AFE24D20C41606006BD0CF /* PanBoldSlider.xib */; };
+		B843E8CB0E3C67208555CAFC /* libPods-FunnyColorBoard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD39284A0E213A04301D5C6 /* libPods-FunnyColorBoard.a */; };
+		E922E83D20BA7605005108DF /* FCBPictureEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E922E83B20BA7605005108DF /* FCBPictureEditorViewController.m */; };
+		E922E83E20BA7605005108DF /* FCBPictureEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E922E83C20BA7605005108DF /* FCBPictureEditorViewController.xib */; };
+		E922E84120BA7632005108DF /* FCBCameraViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E922E84020BA7632005108DF /* FCBCameraViewController.mm */; };
+		E922E84B20BA7926005108DF /* UIColor+NTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E922E84420BA7926005108DF /* UIColor+NTExtension.m */; };
+		E922E84C20BA7926005108DF /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E922E84520BA7926005108DF /* UIImage+Extension.m */; };
+		E922E84D20BA7926005108DF /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = E922E84620BA7926005108DF /* UIViewController+Alert.m */; };
+		E922E84E20BA7926005108DF /* UIView+NTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E922E84720BA7926005108DF /* UIView+NTExtension.m */; };
+		E929ABAF20B6D2F6006DB842 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E929ABAE20B6D2F6006DB842 /* AppDelegate.m */; };
+		E929ABB220B6D2F6006DB842 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E929ABB120B6D2F6006DB842 /* ViewController.mm */; };
+		E929ABB520B6D2F6006DB842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E929ABB320B6D2F6006DB842 /* Main.storyboard */; };
+		E929ABB720B6D2F8006DB842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E929ABB620B6D2F8006DB842 /* Assets.xcassets */; };
+		E929ABBD20B6D2F8006DB842 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E929ABBC20B6D2F8006DB842 /* main.m */; };
+		E929ABC720B6D3CB006DB842 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E929ABC620B6D3CB006DB842 /* libc++.tbd */; };
+		E929ABC920B6D3D3006DB842 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E929ABC820B6D3D2006DB842 /* AVFoundation.framework */; };
+		E929ABCB20B6D3D9006DB842 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E929ABCA20B6D3D9006DB842 /* CoreImage.framework */; };
+		E929ABCD20B6D3E2006DB842 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E929ABCC20B6D3E2006DB842 /* CoreGraphics.framework */; };
+		E929ABCF20B6D3EA006DB842 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E929ABCE20B6D3EA006DB842 /* QuartzCore.framework */; };
+		E929ABD120B6D3F1006DB842 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E929ABD020B6D3F1006DB842 /* Accelerate.framework */; };
+		E929ABD320B6D401006DB842 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E929ABD220B6D401006DB842 /* CoreVideo.framework */; };
+		E929ABD520B6D40D006DB842 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E929ABD420B6D40D006DB842 /* CoreMedia.framework */; };
+		E929ABD720B6D414006DB842 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E929ABD620B6D414006DB842 /* AssetsLibrary.framework */; };
+		E929ABDE20B6D48B006DB842 /* OpenCVManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = E929ABD920B6D48B006DB842 /* OpenCVManager.mm */; };
+		E929ABDF20B6D48B006DB842 /* OpenCVBaseVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = E929ABDA20B6D48B006DB842 /* OpenCVBaseVC.mm */; };
+		E929ABE720B6F43F006DB842 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E929ABC320B6D30D006DB842 /* opencv2.framework */; };
+		E9CAE56420C2B81A000061CF /* WSColorImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CAE56320C2B81A000061CF /* WSColorImageView.m */; };
+		E9CAE56C20C2BA47000061CF /* FCBColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CAE56B20C2BA47000061CF /* FCBColorPickerView.m */; };
+		E9CAE56E20C2BA6F000061CF /* FCBColorPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9CAE56D20C2BA6F000061CF /* FCBColorPickerView.xib */; };
+		E9D44BEA20BED089009B77BF /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D44BE820BED089009B77BF /* DrawView.m */; };
+		E9D44BF020BFB82A009B77BF /* MyBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D44BEF20BFB82A009B77BF /* MyBezierPath.m */; };
+		E9D44BF320BFCBD8009B77BF /* HandlView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D44BF220BFCBD8009B77BF /* HandlView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95F7AE4A20CBAD2C00108CE6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2016B50A20CBB93600BDA528 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		2016B50C20CBB94600BDA528 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		2016B51120CBBACB00BDA528 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		2016B51320CBBACD00BDA528 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2016B51420CBBACF00BDA528 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2016B51A20CBBF3C00BDA528 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2016B51B20CBBF3C00BDA528 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2016B51C20CBC63500BDA528 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2016B52020CD33C200BDA528 /* shutter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shutter.wav; sourceTree = "<group>"; };
+		2016B52120CD33C200BDA528 /* polaroid.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = polaroid.wav; sourceTree = "<group>"; };
+		201E600120C815920064D77B /* LTNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTNavigationController.h; sourceTree = "<group>"; };
+		201E600220C815920064D77B /* LTNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTNavigationController.m; sourceTree = "<group>"; };
+		201E600420C815B80064D77B /* LTNavigationControllerShouldPopProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTNavigationControllerShouldPopProtocol.h; sourceTree = "<group>"; };
+		20AFE24220C3D170006BD0CF /* paletteColor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paletteColor@2x.png"; sourceTree = "<group>"; };
+		20AFE24420C3D598006BD0CF /* followCircle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "followCircle@3x.png"; sourceTree = "<group>"; };
+		20AFE24820C41512006BD0CF /* PanBoldSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanBoldSlider.h; sourceTree = "<group>"; };
+		20AFE24920C41512006BD0CF /* PanBoldSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanBoldSlider.m; sourceTree = "<group>"; };
+		20AFE24D20C41606006BD0CF /* PanBoldSlider.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PanBoldSlider.xib; sourceTree = "<group>"; };
+		341FBF87B8D93819D77F4387 /* Pods-FunnyColorBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunnyColorBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunnyColorBoard/Pods-FunnyColorBoard.release.xcconfig"; sourceTree = "<group>"; };
+		ADD39284A0E213A04301D5C6 /* libPods-FunnyColorBoard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FunnyColorBoard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF3A37DE8EE297133A0AE231 /* Pods-FunnyColorBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunnyColorBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunnyColorBoard/Pods-FunnyColorBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		E922E83A20BA7605005108DF /* FCBPictureEditorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBPictureEditorViewController.h; sourceTree = "<group>"; };
+		E922E83B20BA7605005108DF /* FCBPictureEditorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCBPictureEditorViewController.m; sourceTree = "<group>"; };
+		E922E83C20BA7605005108DF /* FCBPictureEditorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FCBPictureEditorViewController.xib; sourceTree = "<group>"; };
+		E922E83F20BA7632005108DF /* FCBCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBCameraViewController.h; sourceTree = "<group>"; };
+		E922E84020BA7632005108DF /* FCBCameraViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FCBCameraViewController.mm; sourceTree = "<group>"; };
+		E922E84320BA7926005108DF /* UIView+NTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NTExtension.h"; sourceTree = "<group>"; };
+		E922E84420BA7926005108DF /* UIColor+NTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NTExtension.m"; sourceTree = "<group>"; };
+		E922E84520BA7926005108DF /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		E922E84620BA7926005108DF /* UIViewController+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alert.m"; sourceTree = "<group>"; };
+		E922E84720BA7926005108DF /* UIView+NTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NTExtension.m"; sourceTree = "<group>"; };
+		E922E84820BA7926005108DF /* UIViewController+Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alert.h"; sourceTree = "<group>"; };
+		E922E84920BA7926005108DF /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		E922E84A20BA7926005108DF /* UIColor+NTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NTExtension.h"; sourceTree = "<group>"; };
+		E929ABAA20B6D2F6006DB842 /* FunnyColorBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunnyColorBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E929ABAD20B6D2F6006DB842 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E929ABAE20B6D2F6006DB842 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E929ABB020B6D2F6006DB842 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E929ABB120B6D2F6006DB842 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		E929ABB420B6D2F6006DB842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E929ABB620B6D2F8006DB842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E929ABBB20B6D2F8006DB842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E929ABBC20B6D2F8006DB842 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E929ABC320B6D30D006DB842 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		E929ABC620B6D3CB006DB842 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E929ABC820B6D3D2006DB842 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E929ABCA20B6D3D9006DB842 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		E929ABCC20B6D3E2006DB842 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E929ABCE20B6D3EA006DB842 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E929ABD020B6D3F1006DB842 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		E929ABD220B6D401006DB842 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E929ABD420B6D40D006DB842 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E929ABD620B6D414006DB842 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		E929ABD920B6D48B006DB842 /* OpenCVManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVManager.mm; sourceTree = "<group>"; };
+		E929ABDA20B6D48B006DB842 /* OpenCVBaseVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVBaseVC.mm; sourceTree = "<group>"; };
+		E929ABDB20B6D48B006DB842 /* OpenCVManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVManager.h; sourceTree = "<group>"; };
+		E929ABDC20B6D48B006DB842 /* OpenCVDemoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVDemoConfig.h; sourceTree = "<group>"; };
+		E929ABDD20B6D48B006DB842 /* OpenCVBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVBaseVC.h; sourceTree = "<group>"; };
+		E929ABF320B7DD02006DB842 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E9CAE56220C2B81A000061CF /* WSColorImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSColorImageView.h; sourceTree = "<group>"; };
+		E9CAE56320C2B81A000061CF /* WSColorImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSColorImageView.m; sourceTree = "<group>"; };
+		E9CAE56A20C2BA47000061CF /* FCBColorPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBColorPickerView.h; sourceTree = "<group>"; };
+		E9CAE56B20C2BA47000061CF /* FCBColorPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCBColorPickerView.m; sourceTree = "<group>"; };
+		E9CAE56D20C2BA6F000061CF /* FCBColorPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FCBColorPickerView.xib; sourceTree = "<group>"; };
+		E9D44BE820BED089009B77BF /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		E9D44BE920BED089009B77BF /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		E9D44BEE20BFB82A009B77BF /* MyBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBezierPath.h; sourceTree = "<group>"; };
+		E9D44BEF20BFB82A009B77BF /* MyBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBezierPath.m; sourceTree = "<group>"; };
+		E9D44BF120BFCBD8009B77BF /* HandlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandlView.h; sourceTree = "<group>"; };
+		E9D44BF220BFCBD8009B77BF /* HandlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandlView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E929ABA720B6D2F6006DB842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E929ABE720B6F43F006DB842 /* opencv2.framework in Frameworks */,
+				E929ABD720B6D414006DB842 /* AssetsLibrary.framework in Frameworks */,
+				E929ABD520B6D40D006DB842 /* CoreMedia.framework in Frameworks */,
+				E929ABD320B6D401006DB842 /* CoreVideo.framework in Frameworks */,
+				E929ABD120B6D3F1006DB842 /* Accelerate.framework in Frameworks */,
+				E929ABCF20B6D3EA006DB842 /* QuartzCore.framework in Frameworks */,
+				E929ABCD20B6D3E2006DB842 /* CoreGraphics.framework in Frameworks */,
+				E929ABCB20B6D3D9006DB842 /* CoreImage.framework in Frameworks */,
+				E929ABC920B6D3D3006DB842 /* AVFoundation.framework in Frameworks */,
+				E929ABC720B6D3CB006DB842 /* libc++.tbd in Frameworks */,
+				B843E8CB0E3C67208555CAFC /* libPods-FunnyColorBoard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		070643DDC48758406A0456C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF3A37DE8EE297133A0AE231 /* Pods-FunnyColorBoard.debug.xcconfig */,
+				341FBF87B8D93819D77F4387 /* Pods-FunnyColorBoard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		201E600020C815100064D77B /* LTNavigationPop */ = {
+			isa = PBXGroup;
+			children = (
+				201E600120C815920064D77B /* LTNavigationController.h */,
+				201E600220C815920064D77B /* LTNavigationController.m */,
+				201E600420C815B80064D77B /* LTNavigationControllerShouldPopProtocol.h */,
+			);
+			path = LTNavigationPop;
+			sourceTree = "<group>";
+		};
+		20AFE24720C414FF006BD0CF /* PanBoldSlider */ = {
+			isa = PBXGroup;
+			children = (
+				20AFE24820C41512006BD0CF /* PanBoldSlider.h */,
+				20AFE24920C41512006BD0CF /* PanBoldSlider.m */,
+				20AFE24D20C41606006BD0CF /* PanBoldSlider.xib */,
+			);
+			path = PanBoldSlider;
+			sourceTree = "<group>";
+		};
+		E922E84220BA7926005108DF /* Categroy */ = {
+			isa = PBXGroup;
+			children = (
+				E922E84320BA7926005108DF /* UIView+NTExtension.h */,
+				E922E84420BA7926005108DF /* UIColor+NTExtension.m */,
+				E922E84520BA7926005108DF /* UIImage+Extension.m */,
+				E922E84620BA7926005108DF /* UIViewController+Alert.m */,
+				E922E84720BA7926005108DF /* UIView+NTExtension.m */,
+				E922E84820BA7926005108DF /* UIViewController+Alert.h */,
+				E922E84920BA7926005108DF /* UIImage+Extension.h */,
+				E922E84A20BA7926005108DF /* UIColor+NTExtension.h */,
+			);
+			path = Categroy;
+			sourceTree = "<group>";
+		};
+		E922E84F20BA9CA0005108DF /* DrawBoradView */ = {
+			isa = PBXGroup;
+			children = (
+				E9D44BF120BFCBD8009B77BF /* HandlView.h */,
+				E9D44BF220BFCBD8009B77BF /* HandlView.m */,
+				E9D44BEE20BFB82A009B77BF /* MyBezierPath.h */,
+				E9D44BEF20BFB82A009B77BF /* MyBezierPath.m */,
+				E9D44BE920BED089009B77BF /* DrawView.h */,
+				E9D44BE820BED089009B77BF /* DrawView.m */,
+			);
+			path = DrawBoradView;
+			sourceTree = "<group>";
+		};
+		E929ABA120B6D2F6006DB842 = {
+			isa = PBXGroup;
+			children = (
+				E929ABAC20B6D2F6006DB842 /* FunnyColorBoard */,
+				E929ABAB20B6D2F6006DB842 /* Products */,
+				E929ABC520B6D3CB006DB842 /* Frameworks */,
+				070643DDC48758406A0456C8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E929ABAB20B6D2F6006DB842 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E929ABAA20B6D2F6006DB842 /* FunnyColorBoard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E929ABAC20B6D2F6006DB842 /* FunnyColorBoard */ = {
+			isa = PBXGroup;
+			children = (
+				201E600020C815100064D77B /* LTNavigationPop */,
+				20AFE24720C414FF006BD0CF /* PanBoldSlider */,
+				E9CAE56120C2B81A000061CF /* WSColorPicker */,
+				E922E84F20BA9CA0005108DF /* DrawBoradView */,
+				E922E83F20BA7632005108DF /* FCBCameraViewController.h */,
+				E922E84020BA7632005108DF /* FCBCameraViewController.mm */,
+				E922E83A20BA7605005108DF /* FCBPictureEditorViewController.h */,
+				E922E83B20BA7605005108DF /* FCBPictureEditorViewController.m */,
+				E922E83C20BA7605005108DF /* FCBPictureEditorViewController.xib */,
+				E922E84220BA7926005108DF /* Categroy */,
+				E929ABD820B6D48B006DB842 /* OpenCVHelper */,
+				E929ABAD20B6D2F6006DB842 /* AppDelegate.h */,
+				E929ABAE20B6D2F6006DB842 /* AppDelegate.m */,
+				E929ABB020B6D2F6006DB842 /* ViewController.h */,
+				E929ABB120B6D2F6006DB842 /* ViewController.mm */,
+				2016B52120CD33C200BDA528 /* polaroid.wav */,
+				2016B52020CD33C200BDA528 /* shutter.wav */,
+				E929ABB320B6D2F6006DB842 /* Main.storyboard */,
+				E929ABB620B6D2F8006DB842 /* Assets.xcassets */,
+				E929ABBB20B6D2F8006DB842 /* Info.plist */,
+				2016B51220CBBACB00BDA528 /* InfoPlist.strings */,
+				2016B51920CBBF3A00BDA528 /* Localizable.strings */,
+				E929ABBC20B6D2F8006DB842 /* main.m */,
+				E929ABF320B7DD02006DB842 /* PrefixHeader.pch */,
+			);
+			path = FunnyColorBoard;
+			sourceTree = "<group>";
+		};
+		E929ABC520B6D3CB006DB842 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E929ABC320B6D30D006DB842 /* opencv2.framework */,
+				E929ABD620B6D414006DB842 /* AssetsLibrary.framework */,
+				E929ABD420B6D40D006DB842 /* CoreMedia.framework */,
+				E929ABD220B6D401006DB842 /* CoreVideo.framework */,
+				E929ABD020B6D3F1006DB842 /* Accelerate.framework */,
+				E929ABCE20B6D3EA006DB842 /* QuartzCore.framework */,
+				E929ABCC20B6D3E2006DB842 /* CoreGraphics.framework */,
+				E929ABCA20B6D3D9006DB842 /* CoreImage.framework */,
+				E929ABC820B6D3D2006DB842 /* AVFoundation.framework */,
+				E929ABC620B6D3CB006DB842 /* libc++.tbd */,
+				ADD39284A0E213A04301D5C6 /* libPods-FunnyColorBoard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E929ABD820B6D48B006DB842 /* OpenCVHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E929ABDC20B6D48B006DB842 /* OpenCVDemoConfig.h */,
+				E929ABDB20B6D48B006DB842 /* OpenCVManager.h */,
+				E929ABD920B6D48B006DB842 /* OpenCVManager.mm */,
+				E929ABDD20B6D48B006DB842 /* OpenCVBaseVC.h */,
+				E929ABDA20B6D48B006DB842 /* OpenCVBaseVC.mm */,
+			);
+			path = OpenCVHelper;
+			sourceTree = "<group>";
+		};
+		E9CAE56120C2B81A000061CF /* WSColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				E9CAE56220C2B81A000061CF /* WSColorImageView.h */,
+				E9CAE56320C2B81A000061CF /* WSColorImageView.m */,
+				20AFE24420C3D598006BD0CF /* followCircle@3x.png */,
+				20AFE24220C3D170006BD0CF /* paletteColor@2x.png */,
+				E9CAE56A20C2BA47000061CF /* FCBColorPickerView.h */,
+				E9CAE56B20C2BA47000061CF /* FCBColorPickerView.m */,
+				E9CAE56D20C2BA6F000061CF /* FCBColorPickerView.xib */,
+			);
+			path = WSColorPicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E929ABA920B6D2F6006DB842 /* FunnyColorBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E929ABC020B6D2F8006DB842 /* Build configuration list for PBXNativeTarget "FunnyColorBoard" */;
+			buildPhases = (
+				0C1D0E18CCA32A2E7C84A607 /* [CP] Check Pods Manifest.lock */,
+				E929ABA620B6D2F6006DB842 /* Sources */,
+				E929ABA720B6D2F6006DB842 /* Frameworks */,
+				E929ABA820B6D2F6006DB842 /* Resources */,
+				F67E3BC21608FCAB36AEC64B /* [CP] Copy Pods Resources */,
+				95F7AE4A20CBAD2C00108CE6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunnyColorBoard;
+			productName = FunnyColorBoard;
+			productReference = E929ABAA20B6D2F6006DB842 /* FunnyColorBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E929ABA220B6D2F6006DB842 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Niti;
+				TargetAttributes = {
+					E929ABA920B6D2F6006DB842 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E929ABA520B6D2F6006DB842 /* Build configuration list for PBXProject "FunnyColorBoard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+				"zh-Hans",
+			);
+			mainGroup = E929ABA120B6D2F6006DB842;
+			productRefGroup = E929ABAB20B6D2F6006DB842 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E929ABA920B6D2F6006DB842 /* FunnyColorBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E929ABA820B6D2F6006DB842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AFE24520C3D598006BD0CF /* followCircle@3x.png in Resources */,
+				20AFE24320C3D170006BD0CF /* paletteColor@2x.png in Resources */,
+				2016B52220CD33C200BDA528 /* shutter.wav in Resources */,
+				E922E83E20BA7605005108DF /* FCBPictureEditorViewController.xib in Resources */,
+				E929ABB720B6D2F8006DB842 /* Assets.xcassets in Resources */,
+				2016B51720CBBF3A00BDA528 /* Localizable.strings in Resources */,
+				20AFE24E20C41606006BD0CF /* PanBoldSlider.xib in Resources */,
+				2016B52320CD33C200BDA528 /* polaroid.wav in Resources */,
+				E9CAE56E20C2BA6F000061CF /* FCBColorPickerView.xib in Resources */,
+				2016B51020CBBACB00BDA528 /* InfoPlist.strings in Resources */,
+				E929ABB520B6D2F6006DB842 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C1D0E18CCA32A2E7C84A607 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FunnyColorBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F67E3BC21608FCAB36AEC64B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FunnyColorBoard/Pods-FunnyColorBoard-resources.sh",
+				"${PODS_ROOT}/ProgressHUD/ProgressHUD/ProgressHUD/ProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunnyColorBoard/Pods-FunnyColorBoard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E929ABA620B6D2F6006DB842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E922E84120BA7632005108DF /* FCBCameraViewController.mm in Sources */,
+				E922E83D20BA7605005108DF /* FCBPictureEditorViewController.m in Sources */,
+				E9D44BEA20BED089009B77BF /* DrawView.m in Sources */,
+				E929ABB220B6D2F6006DB842 /* ViewController.mm in Sources */,
+				E9CAE56420C2B81A000061CF /* WSColorImageView.m in Sources */,
+				E922E84D20BA7926005108DF /* UIViewController+Alert.m in Sources */,
+				20AFE24A20C41512006BD0CF /* PanBoldSlider.m in Sources */,
+				E9CAE56C20C2BA47000061CF /* FCBColorPickerView.m in Sources */,
+				E9D44BF020BFB82A009B77BF /* MyBezierPath.m in Sources */,
+				E929ABDF20B6D48B006DB842 /* OpenCVBaseVC.mm in Sources */,
+				E922E84C20BA7926005108DF /* UIImage+Extension.m in Sources */,
+				E929ABBD20B6D2F8006DB842 /* main.m in Sources */,
+				E929ABDE20B6D48B006DB842 /* OpenCVManager.mm in Sources */,
+				E922E84B20BA7926005108DF /* UIColor+NTExtension.m in Sources */,
+				E922E84E20BA7926005108DF /* UIView+NTExtension.m in Sources */,
+				E9D44BF320BFCBD8009B77BF /* HandlView.m in Sources */,
+				E929ABAF20B6D2F6006DB842 /* AppDelegate.m in Sources */,
+				201E600320C815920064D77B /* LTNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2016B51220CBBACB00BDA528 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2016B51120CBBACB00BDA528 /* zh-Hans */,
+				2016B51320CBBACD00BDA528 /* ja */,
+				2016B51420CBBACF00BDA528 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2016B51920CBBF3A00BDA528 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2016B51A20CBBF3C00BDA528 /* ja */,
+				2016B51B20CBBF3C00BDA528 /* zh-Hans */,
+				2016B51C20CBC63500BDA528 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		E929ABB320B6D2F6006DB842 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E929ABB420B6D2F6006DB842 /* Base */,
+				2016B50A20CBB93600BDA528 /* zh-Hans */,
+				2016B50C20CBB94600BDA528 /* ja */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E929ABBE20B6D2F8006DB842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E929ABBF20B6D2F8006DB842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E929ABC120B6D2F8006DB842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF3A37DE8EE297133A0AE231 /* Pods-FunnyColorBoard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HFW8JWH32Y;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FunnyColorBoard",
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				GCC_PREFIX_HEADER = FunnyColorBoard/PrefixHeader.pch;
+				INFOPLIST_FILE = FunnyColorBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"IFMMenu\"",
+					"-l\"Masonry\"",
+					"-l\"ProgressHUD\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntjl.galaxyonnie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E929ABC220B6D2F8006DB842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 341FBF87B8D93819D77F4387 /* Pods-FunnyColorBoard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HFW8JWH32Y;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FunnyColorBoard",
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				GCC_PREFIX_HEADER = FunnyColorBoard/PrefixHeader.pch;
+				INFOPLIST_FILE = FunnyColorBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntjl.galaxyonnie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E929ABA520B6D2F6006DB842 /* Build configuration list for PBXProject "FunnyColorBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E929ABBE20B6D2F8006DB842 /* Debug */,
+				E929ABBF20B6D2F8006DB842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E929ABC020B6D2F8006DB842 /* Build configuration list for PBXNativeTarget "FunnyColorBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E929ABC120B6D2F8006DB842 /* Debug */,
+				E929ABC220B6D2F8006DB842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E929ABA220B6D2F6006DB842 /* Project object */;
+}

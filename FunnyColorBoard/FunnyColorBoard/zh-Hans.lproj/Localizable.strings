@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  FunnyColorBoard
+
+  Created by 大雄 on 2018/6/9.
+  Copyright © 2018年 Niti. All rights reserved.
+*/
+
+"Take A Picture" = "拍轮廓图";
+"Edit" = "编辑";
+"Save" = "保存";
+"AbandonEditing" = "放弃编辑?";
+"Your edited picture will not be save." = "您当前编辑的图片不会被保存";
+"Yes" = "确定";
+"No" = "取消";
+"SaveSuccess" = "保存到相册成功";
+
+"SavePicture" = "保存图片";
+"Notnow" = "暂不";
+"Brush" = "画笔";
+"Eraser" = "橡皮擦";
+"Round" = "圆角";
+"Sharp" = "方角";
+
+

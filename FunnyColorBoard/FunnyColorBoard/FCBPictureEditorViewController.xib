@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FCBPictureEditorViewController">
+            <connections>
+                <outlet property="drawToolBtnsStack" destination="u78-Mv-rok" id="xgO-iE-g5T"/>
+                <outlet property="drawView" destination="kEa-Mi-X6H" id="YWc-AR-coL"/>
+                <outlet property="dropdownMenu" destination="DGc-tf-6c8" id="8jG-vu-s1O"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGc-tf-6c8">
+                    <rect key="frame" x="0.0" y="553" width="375" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="u78-Mv-rok">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zch-ci-A7H">
+                                    <rect key="frame" x="0.0" y="0.0" width="62.5" height="50"/>
+                                    <state key="normal" image="appiicon_bijian"/>
+                                    <connections>
+                                        <action selector="tapDropdownTool:" destination="-1" eventType="touchUpInside" id="XiV-dP-HTV"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjs-C4-RY2">
+                                    <rect key="frame" x="62.5" y="0.0" width="62.5" height="50"/>
+                                    <state key="normal" image="appiicon_huaban"/>
+                                    <connections>
+                                        <action selector="tapDropdownColor:" destination="-1" eventType="touchUpInside" id="ks5-nk-AQc"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4h-Li-sBS">
+                                    <rect key="frame" x="125" y="0.0" width="62.5" height="50"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <state key="normal" image="appiicon_jiacu"/>
+                                    <connections>
+                                        <action selector="tapDropdownLineBold:" destination="-1" eventType="touchUpInside" id="gIp-ZG-LLx"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGg-8g-bKz">
+                                    <rect key="frame" x="187.5" y="0.0" width="62.5" height="50"/>
+                                    <state key="normal" image="appiicon_yuanjiao"/>
+                                    <connections>
+                                        <action selector="tapDropdownSharp:" destination="-1" eventType="touchUpInside" id="qqx-3p-2Fe"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJ8-mG-eTc">
+                                    <rect key="frame" x="250" y="0.0" width="62.5" height="50"/>
+                                    <state key="normal" image="appiicon_xiangce"/>
+                                    <connections>
+                                        <action selector="tapAddNewImg:" destination="-1" eventType="touchUpInside" id="VXV-mj-dJt"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asq-IY-Aqk">
+                                    <rect key="frame" x="312.5" y="0.0" width="62.5" height="50"/>
+                                    <state key="normal" image="appiicon_chehui"/>
+                                    <connections>
+                                        <action selector="tapDropdownRepeal:" destination="-1" eventType="touchUpInside" id="OuM-Ln-ybV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Zch-ci-A7H" secondAttribute="bottom" id="HLb-tf-KFk"/>
+                                <constraint firstItem="BGg-8g-bKz" firstAttribute="height" secondItem="Zch-ci-A7H" secondAttribute="height" id="KJs-qu-Na3"/>
+                                <constraint firstItem="asq-IY-Aqk" firstAttribute="height" secondItem="Zch-ci-A7H" secondAttribute="height" id="cby-lp-KIN"/>
+                                <constraint firstItem="S4h-Li-sBS" firstAttribute="height" secondItem="Zch-ci-A7H" secondAttribute="height" id="hvf-ok-YTJ"/>
+                                <constraint firstItem="QJ8-mG-eTc" firstAttribute="height" secondItem="Zch-ci-A7H" secondAttribute="height" id="knV-9i-OXD"/>
+                                <constraint firstItem="Zch-ci-A7H" firstAttribute="top" secondItem="u78-Mv-rok" secondAttribute="top" id="oDh-RT-jFm"/>
+                                <constraint firstItem="Mjs-C4-RY2" firstAttribute="height" secondItem="Zch-ci-A7H" secondAttribute="height" id="rVm-bt-RnR"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="u78-Mv-rok" secondAttribute="bottom" id="HFN-QN-EdM"/>
+                        <constraint firstAttribute="trailing" secondItem="u78-Mv-rok" secondAttribute="trailing" id="M9u-Ki-Xny"/>
+                        <constraint firstAttribute="height" constant="50" id="bee-Vs-hJL"/>
+                        <constraint firstItem="u78-Mv-rok" firstAttribute="top" secondItem="DGc-tf-6c8" secondAttribute="top" id="ldc-PZ-RCt"/>
+                        <constraint firstItem="u78-Mv-rok" firstAttribute="leading" secondItem="DGc-tf-6c8" secondAttribute="leading" id="nCm-fF-OQC"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEa-Mi-X6H" customClass="DrawView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kEa-Mi-X6H" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="BF2-Iz-7HO"/>
+                <constraint firstItem="DGc-tf-6c8" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="I0K-m6-SkF"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kEa-Mi-X6H" secondAttribute="trailing" id="J9L-z6-DEc"/>
+                <constraint firstItem="kEa-Mi-X6H" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="NLY-zZ-1xm"/>
+                <constraint firstItem="DGc-tf-6c8" firstAttribute="top" secondItem="kEa-Mi-X6H" secondAttribute="bottom" id="jUG-Gk-P4Y"/>
+                <constraint firstItem="DGc-tf-6c8" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="jqC-q6-TTR"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="DGc-tf-6c8" secondAttribute="trailing" id="lk3-2Y-GPZ"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="458" y="-126"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="appiicon_bijian" width="30" height="30"/>
+        <image name="appiicon_chehui" width="30" height="30"/>
+        <image name="appiicon_huaban" width="30" height="30"/>
+        <image name="appiicon_jiacu" width="30" height="30"/>
+        <image name="appiicon_xiangce" width="30" height="30"/>
+        <image name="appiicon_yuanjiao" width="30" height="30"/>
+    </resources>
+</document>

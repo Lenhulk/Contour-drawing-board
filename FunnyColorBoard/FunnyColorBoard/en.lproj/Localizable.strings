@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  FunnyColorBoard
+
+  Created by 大雄 on 2018/6/9.
+  Copyright © 2018年 Niti. All rights reserved.
+*/
+
+"Take A Picture" = "Take A Picture";
+"Edit" = "Edit";
+"Save" = "Save";
+"AbandonEditing" = "Abandon Editing?";
+"Your edited picture will not be save." = "Your edited picture will not be save.";
+"Yes" = "YES";
+"No" = "NO";
+
+"SaveSuccess" = "Save Success";
+"SavePicture" = "Save Picture?";
+"Notnow" = "Not now";
+"Brush" = "Brush";
+"Eraser" = "Eraser";
+"Round" = "Round";
+"Sharp" = "Sharp";
+"It will be saved to your photo album." = "It will be saved to your photo album.";

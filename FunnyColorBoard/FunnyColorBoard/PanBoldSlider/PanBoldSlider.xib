@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PanBoldSlider">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S27-4i-YoD">
+                    <rect key="frame" x="229.5" y="525" width="46" height="42"/>
+                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
+                    <state key="normal" title="OK!"/>
+                    <connections>
+                        <action selector="tapOkBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="1Wk-OZ-mmK"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6op-Z2-Rrs">
+                    <rect key="frame" x="242" y="453" width="21" height="52"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="38"/>
+                    <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line Bold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fY1-Z6-TrC">
+                    <rect key="frame" x="195.5" y="397" width="114" height="36"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                    <color key="textColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.6015625" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="S27-4i-YoD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="65" id="7fe-L5-9KW"/>
+                <constraint firstItem="S27-4i-YoD" firstAttribute="top" secondItem="6op-Z2-Rrs" secondAttribute="bottom" constant="20" id="I2t-R2-IhL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="S27-4i-YoD" secondAttribute="bottom" constant="100" id="Y5g-Tm-9Mi"/>
+                <constraint firstItem="fY1-Z6-TrC" firstAttribute="centerX" secondItem="6op-Z2-Rrs" secondAttribute="centerX" id="cvP-p1-1gH"/>
+                <constraint firstItem="6op-Z2-Rrs" firstAttribute="centerX" secondItem="S27-4i-YoD" secondAttribute="centerX" id="eXx-S2-caA"/>
+                <constraint firstItem="6op-Z2-Rrs" firstAttribute="top" secondItem="fY1-Z6-TrC" secondAttribute="bottom" constant="20" id="hIU-py-ygt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="boldLb" destination="6op-Z2-Rrs" id="udM-lC-ioV"/>
+            </connections>
+        </view>
+    </objects>
+</document>

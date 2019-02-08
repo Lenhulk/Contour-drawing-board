@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  FunnyColorBoard
+
+  Created by 大雄 on 2018/6/9.
+  Copyright © 2018年 Niti. All rights reserved.
+*/
+
+"Take A Picture" = "写真を撮る";
+"Edit" = "編集";
+"Save" = "保存する";
+"AbandonEditing" = "編集をやめる?";
+"Your edited picture will not be save." = "現在編集されている画像は保存されません";
+"Yes" = "OK";
+"No" = "キャンセル";
+
+"SaveSuccess" = "アルバムに正常に保存";
+"SavePicture" = "画像を保存する";
+"Notnow" = "今はやめろ";
+"Brush" = "ペン";
+"Eraser" = "消しゴム";
+"Round" = "円形";
+"Sharp" = "シャープ";
